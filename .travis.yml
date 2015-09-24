@@ -15,19 +15,20 @@ env:
     - COMPILER=g++-4.8 CCOMPILER=gcc-4.8
     - COMPILER=g++-4.9 CCOMPILER=gcc-4.9 GENERATE_COVERAGE=ON
     - COMPILER=g++-5 CCOMPILER=gcc-5
-    - COMPILER=clang++-3.6 CCOMPILER=clang-3.6
+      #- COMPILER=clang++-3.6 CCOMPILER=clang-3.6
 
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - llvm-toolchain-precise
-      - llvm-toolchain-precise-3.6
+        #- llvm-toolchain-precise
+        #- llvm-toolchain-precise-3.6
+        #- llvm-toolchain-precise-3.7
     packages:
       - g++-4.8
       - g++-4.9
       - g++-5
-      - llvm-3.6
+        #- clang-3.6
       - valgrind
       - python-pip
       - python-yaml
